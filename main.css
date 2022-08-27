@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.content-contact--details::first-letter {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.content {
+    background: white;
+    border-radius: 15px;
+    width: 80%;
+    height: calc(100% - 60px);
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.content__contact-info {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0;
+
+}
+
+.profile-picture {
+    height: 30%;
+    width: 30%;
+    border-radius: 5%;
+    box-shadow: 0 4px 9px 4px #DFE0DF;
+}
+
+
+.content-contact--details {
+    width: 95%;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.content__contact--user-name {
+    padding-top: 1.5em;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content__contact--det {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.social__card {
+    border-radius: 50px 50px;
+    height: 3.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75%;
+    margin: 0.7rem auto;
+    color: white;
+    cursor: pointer;
+}
+
+.social__card:hover,
+.social__card:active
+{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 4px 0px;
+    transform: scale(1.075);
+}
+
+.social__card a {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    padding: 0.4rem 1rem;
+}
+
+.social__card img {
+    height: 70%;
+}
+
+.social__card label {
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+
+.instagram {
+    background: linear-gradient(-90deg, #ee7752, #e73c7e);
+    box-shadow: 4px 5px 20px 0px #ee7752;
+}
+
+.telegram {
+    background: linear-gradient(-90deg, #00C7DE, #0393D5);
+    box-shadow: 4px 5px 20px 0px #00C7DE;
+}
+
+.twitter {
+    background: linear-gradient(-90deg, #00C7DE, #0393D5);
+    box-shadow: 4px 5px 20px 0px #00C7DE;
+}
+
+.whatsapp {
+    background: linear-gradient(90deg, #3498db, #0052D4);
+    box-shadow: 4px 5px 20px 0px #3498db;
+}
+
+.github {
+    background: linear-gradient(-90deg, #232526, #414345);
+    box-shadow: 4px 5px 20px 0px #232526;
+}
+
+.youtube {
+    background: linear-gradient(90deg, #ED213A, #93291E);
+    box-shadow: 4px 5px 20px 0px #ED213A;
+}
+
+.resume {
+    background: linear-gradient(90deg, rgb(26, 109, 255) -0.42%, rgb(200, 34, 255) 100.42%);
+    box-shadow: 4px 5px 20px 0px rgb(26, 109, 255);
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+}
+
+.skills a {
+    display: block;
+    width: 100%;
+}
+
+.badge {
+    margin: 0.5em auto;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.43);
+    cursor: pointer;
+}
+
+.badge:hover {
+    margin-top: 1rem;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+    html, body {
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        height: 80%;
+        margin: 5% auto;
+    }
+
+    .content__contact-info {
+        width: 50%;
+        padding: 10% 5%;
+    }
+
+    .content__contact--det {
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+}  
+
